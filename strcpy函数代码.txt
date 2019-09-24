@@ -23,3 +23,9 @@ scanf("%s",str2);
 printf("%s\n",StrCpy(str1,str2));
 return 0;
 }
+
+/**
+
+本地编辑
+
+**/
