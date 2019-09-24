@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <string.h>
+char* StrCpy(char *strDest, const char *strSrc)
+{
+if(!strDest||!strSrc)
+return NULL;
+if (!strlen(strSrc))
+{
+*strDest='\0';
+return strDest;
+}
+char* tmp=strDest;
+do
+{
+*tmp++=*strSrc;
+} while (*strSrc++);
+return strDest;
+}
+int main()
+{
+char str1[20],str2[20];
+scanf("%s",str2);
+printf("%s\n",StrCpy(str1,str2));
+return 0;
+}
